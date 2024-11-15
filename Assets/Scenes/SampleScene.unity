@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8f8ef7607d45b641ac0ba2305494e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speedScale: 0.5
+  _speed: 0.5
 --- !u!1 &182462424
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c67cbbff7a8ee4ca074496df27933d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speedRotation: 40
+  _speed: 50
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039c2ebc52b197c4b8e2c413e8ff6433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementDirection: {x: 0, y: 0, z: 0.1}
+  _direction: {x: 0, y: 0, z: 0.04}
 --- !u!135 &778979027
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -679,8 +679,9 @@ GameObject:
   - component: {fileID: 1586606999}
   - component: {fileID: 1586606998}
   - component: {fileID: 1586606997}
-  - component: {fileID: 1586607001}
+  - component: {fileID: 1586607003}
   - component: {fileID: 1586607002}
+  - component: {fileID: 1586607001}
   m_Layer: 0
   m_Name: MoveCube
   m_TagString: Untagged
@@ -783,11 +784,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1586606996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bf268dcfe90e824e86c4782e48b422c, type: 3}
+  m_Script: {fileID: 11500000, guid: 039c2ebc52b197c4b8e2c413e8ff6433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speedScale: 1
-  _speedRotation: 40
+  _direction: {x: 0, y: 0, z: 0.03}
 --- !u!114 &1586607002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -797,11 +797,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1586606996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c033de9157dbe9489fde2d8ef821ffc, type: 3}
+  m_Script: {fileID: 11500000, guid: a8f8ef7607d45b641ac0ba2305494e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameObject: {fileID: 778979030}
-  _followSpeed: 5
+  _speed: 2
+--- !u!114 &1586607003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586606996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c67cbbff7a8ee4ca074496df27933d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 40
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
