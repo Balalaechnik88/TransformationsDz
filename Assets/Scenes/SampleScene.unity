@@ -488,7 +488,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039c2ebc52b197c4b8e2c413e8ff6433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _direction: {x: 0, y: 0, z: 0.04}
+  _direction: {x: 0, y: 0, z: 0.2}
+  _speed: 5
 --- !u!135 &778979027
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -787,7 +788,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039c2ebc52b197c4b8e2c413e8ff6433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _direction: {x: 0, y: 0, z: 0.03}
+  _direction: {x: 0, y: 0, z: 2}
+  _speed: 7
 --- !u!114 &1586607002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,7 +802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8f8ef7607d45b641ac0ba2305494e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 2
+  _speed: 1.5
 --- !u!114 &1586607003
 MonoBehaviour:
   m_ObjectHideFlags: 0

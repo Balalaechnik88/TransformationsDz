@@ -5,9 +5,10 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
     [SerializeField] private Vector3 _direction;
+    [SerializeField] private float _speed;
 
     private void Update()
     {
-       transform.position += _direction;
+       transform.Translate(_direction * _speed * Time.deltaTime);
     }
 }
